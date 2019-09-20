@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/20 14:01:35 by tmarkita          #+#    #+#             */
+/*   Updated: 2019/09/20 14:01:46 by tmarkita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *hay, const char *needle, size_t len)
@@ -9,7 +21,7 @@ char	*ft_strnstr(const char *hay, const char *needle, size_t len)
 		return ((char *)hay);
 	i = 0;
 	l = ft_strlen(needle);
-	while (*hay && i < len )
+	while (*hay && i < len)
 	{
 		if (*hay == *needle)
 		{

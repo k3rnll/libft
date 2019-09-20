@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/20 14:02:55 by tmarkita          #+#    #+#             */
+/*   Updated: 2019/09/20 14:03:18 by tmarkita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strstr(const char *hay, const char *needle)
@@ -20,4 +32,4 @@ char	*ft_strstr(const char *hay, const char *needle)
 		i++;
 	}
 	return (NULL);
-}		
+}

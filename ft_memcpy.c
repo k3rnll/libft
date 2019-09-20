@@ -6,15 +6,15 @@
 /*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:02:59 by tmarkita          #+#    #+#             */
-/*   Updated: 2019/09/14 19:39:14 by tmarkita         ###   ########.fr       */
+/*   Updated: 2019/09/20 14:17:23 by tmarkita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*s;
 	unsigned char	*d;
 

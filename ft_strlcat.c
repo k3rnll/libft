@@ -6,7 +6,7 @@
 /*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 14:00:11 by tmarkita          #+#    #+#             */
-/*   Updated: 2019/09/20 14:19:30 by tmarkita         ###   ########.fr       */
+/*   Updated: 2019/09/20 17:23:50 by tmarkita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 	slen = ft_strlen(src);
 	if (n < dlen)
 		return (slen + n);
+	if (n == 0)
+		n = 1;
 	i = 0;
 	while (dst[i] != '\0')
 		i++;
@@ -32,5 +34,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 		src++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen(src) + ft_strlen(dst));
+	return (slen + dlen);
 }

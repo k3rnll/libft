@@ -6,7 +6,7 @@
 /*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 13:26:00 by tmarkita          #+#    #+#             */
-/*   Updated: 2019/09/20 14:03:40 by tmarkita         ###   ########.fr       */
+/*   Updated: 2019/09/20 16:07:02 by tmarkita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_atoi(const char *str)
 {
-	int						s;
-	unsigned long long int	n;
-	long long int			t;
+	int				s;
+	long long int	n;
+	long long int	t;
 
 	s = 1;
 	n = 0;
@@ -28,13 +28,14 @@ int		ft_atoi(const char *str)
 		str++;
 	while (*str != '\0' && ft_isdigit(*str))
 	{
-		if (n > 9223372036854775807 && s == -1)
-			return (0);
-		if (n > 9223372036854775807 && s == 1)
-			return (-1);
+		t = n;
 		n = (n * 10) + (*str - '0');
+		if (n < t && s == 1)
+			return (-1);
+		if (n < t && s == -1)
+			return (0);
 		str++;
 	}
-	t = (long long int)n * s;
+	t = n * s;
 	return (t);
 }

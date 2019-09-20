@@ -6,7 +6,7 @@
 /*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 14:01:35 by tmarkita          #+#    #+#             */
-/*   Updated: 2019/09/20 14:01:46 by tmarkita         ###   ########.fr       */
+/*   Updated: 2019/09/20 17:39:46 by tmarkita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,14 @@ char	*ft_strnstr(const char *hay, const char *needle, size_t len)
 	l = ft_strlen(needle);
 	while (*hay && i < len)
 	{
+		if (i + l > len)
+			return (NULL);
 		if (*hay == *needle)
 		{
 			if (ft_strncmp(hay, needle, l) == 0)
 				return ((char *)hay);
 		}
 		hay++;
-		len--;
 		i++;
 	}
 	return (NULL);

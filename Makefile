@@ -6,7 +6,7 @@
 #    By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/17 15:42:34 by tmarkita          #+#    #+#              #
-#    Updated: 2019/09/22 17:07:36 by tmarkita         ###   ########.fr        #
+#    Updated: 2019/09/22 18:55:28 by tmarkita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 	ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c \
 	ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c \
 	ft_strtrim.c ft_tolower.c ft_toupper.c \
-	ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c
+	ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c
 OBJ = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o \
 	ft_isprint.o ft_itoa.o ft_memalloc.o ft_memccpy.o ft_memchr.o \
 	ft_memcmp.o ft_memcpy.o ft_memdel.o ft_memmove.o ft_memset.o \
@@ -32,7 +32,7 @@ OBJ = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o \
 	ft_strmap.o ft_strmapi.o ft_strncat.o ft_strncmp.o ft_strncpy.o \
 	ft_strnequ.o ft_strnew.o ft_strnstr.o ft_strrchr.o ft_strsplit.o \
 	ft_strstr.o ft_strsub.o ft_strtrim.o ft_tolower.o ft_toupper.o \
-	ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o
+	ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 NAME = libft.a
 
 all: $(NAME)

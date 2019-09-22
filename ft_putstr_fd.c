@@ -6,7 +6,7 @@
 /*   By: tmarkita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/21 20:34:35 by tmarkita          #+#    #+#             */
-/*   Updated: 2019/09/21 20:47:13 by tmarkita         ###   ########.fr       */
+/*   Updated: 2019/09/22 19:10:23 by tmarkita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	while (*s)
+	if (s)
 	{
-		ft_putchar_fd(*s, fd);
-		s++;
+		while (*s)
+		{
+			ft_putchar_fd(*s, fd);
+			s++;
+		}
 	}
 }
